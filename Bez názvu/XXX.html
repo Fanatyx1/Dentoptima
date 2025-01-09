@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="body">
+    <div class="content">
+        <div class="header">
+            <img src="obr1.jpg" alt="logo" width="50" height="50">
+            <div class="header_links">
+                <a href="https://en.wikipedia.org/wiki/Fairy">Wiki about fairies</a>
+                <a href="https://en.wikipedia.org/wiki/Fairy">Fairies</a>
+                <a href="https://en.wikipedia.org/wiki/Fairy">About fairies</a>
+            </div>
+        </div>
+
+    
+        <div class="content1">
+            <div class="content1_box">
+                <div class="content1-1">  
+                    <div class="h1"> This is website about fairies</div>
+                    <div class="text1">A fairy is a type of mythical being or legendary creature, generally described as anthropomorphic, found in the folklore.</div>
+                <button onclick="openLayoutImage()">Layout pattern</button> 
+                <script>
+                    function openLayoutImage() {
+                        var imageUrl = 'Layout.png';
+                        window.open(imageUrl, '_blank');
+                    }
+                    </script>
+                </div>
+                <img src="background.jpg" alt="background" width="210" height="150">
+            </div>
+        </div>
+        <div class="content2">
+            <div class="h2">Guaranteed real photos of fairies</div>
+            <ul>
+               <li> <img src="obr1.jpg" alt="víla1" width="100" height="100">
+                    <div class="img_text">This is some subtext under the image</div></li>
+                <li> <img src="obr2.jpg" alt="víla2" width="100" height="100">
+                    <div>This is some subtext under the image</div></li>
+                <li> <img src="obr3.jpg" alt="víla3" width="100" height="100">
+                    <div>This is some subtext under the image</div></li>
+                <li> <img src="obr4.jpg" alt="víla4" width="100" height="100">
+                    <div>This is some subtext under the image</div></li>
+            </ul>
+        </div>
+        <div class="content3">
+            <div class="content3_text">This is an inspiring quote, or a testimonial from a cutopmer.
+                    Maybe it is just filing up sace, or maybe people will actually read it. All I know is that it looks nice.
+            </div>
+            <div class="podpis"> - Thor, God of thunder</div>
+        </div>
+        <div class="content4">
+            <div class="modry_obdelnik">
+                <div class="content4_text">
+                    <div class="nadpisobdelniku"> Call to action! It is time</div>
+                    <div class="textobdelniku">Sign for our product. By clicing on that button overthere.</div>
+                </div>
+                <button onclick="openGraphicImage()">Graphic pattern</button> 
+                <script>
+                    function openGraphicImage() {
+                        var imageUrl = 'graphic.png';
+                        window.open(imageUrl, '_blank');
+                    }
+                    </script>
+            </div>
+                
+        </div>
+    
+        <div class="footer">
+            <div> Copyright: The Odein project 2024</div>
+        </div>
+    </div>
+</body>
+</html>

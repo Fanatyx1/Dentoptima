@@ -1,0 +1,14 @@
+Stránka s ceníkem:
+Jednotlivé služby jsou ve flxboxu jako karty s kulatými rohy, které mají wrap.
+Teprve po kliknutí na ně a otevření se dostaneme na stránku, která popíše službu a dá nám její cenu.
+
+Samostatná stránka hygiena
+
+Samostatná stránka jak to u nás chodí: s tím, že v textu jsou odkazy na další stránky třeba na hygienu.
+
+Stránka s kým se potáte(náš tým)
+
+Stránka kontakt (tel, mapa, adresa, email)
+
+Ceník - vykašlat se na karty - udělat normální list, ale animovat ho do řádkového načítání
+
