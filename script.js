@@ -7,3 +7,13 @@ menuToggle.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
+//animace menu
+window.onload = function() {
+  const menuLinks = document.querySelectorAll('.menu a');
+  
+  menuLinks.forEach((link, index) => {
+      setTimeout(() => {
+          link.classList.add('visible');  
+      }, (100 * index));  // Zpoždění mezi jednotlivými odkazy
+  });
+};

@@ -1,6 +1,6 @@
 Stránka s ceníkem:
-Jednotlivé služby jsou ve flxboxu jako karty s kulatými rohy, které mají wrap.
-Teprve po kliknutí na ně a otevření se dostaneme na stránku, která popíše službu a dá nám její cenu.
+
+
 
 Samostatná stránka hygiena
 
@@ -46,3 +46,11 @@ Onas - certifikat, fotky, pribeh
 Aktuality: dovolene, prijmamaˇe/ neprijmame pacienty
 
 
+Animace webu a menu zpomaleného načítání
+Hover na menu
+
+
+
+Corner rádius na celou stránku (hlavička nahoře a fotel dole)
+
+služby - co děláme a vysvětlení
