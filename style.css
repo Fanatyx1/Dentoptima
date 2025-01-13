@@ -31,7 +31,6 @@ body {
     color: white;
     width: 100%;
     height: 120px;
-    border-bottom: 1px solid white;
 }
 
 .logo1 {
@@ -138,7 +137,7 @@ a:visited {
 
 } 
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .menu {
         display: none;
         width: 300px;
@@ -309,21 +308,92 @@ a:visited {
     margin-top: 15px;
 }
 
+.container_kontakt .nadpis {
+    font-size: 36px;
+    text-align: Left;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.aktuality {
+    box-sizing: border-box;
+    padding: 50px;
+    padding-left: 15%;
+    font-size: 18px;
+}
 
 .kontakty {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-between;
+    padding:  20px;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .container_kontakt .podnadpis {
     font-size: 26px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 15px;
-    margin-left: 15%;
+    margin-top: 0px;
 }
 
-@media (max-width:800px) {
+.kontakt_podnadpis {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+
+.objednani {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 25px;
+    background-color: #E5E7EB;
+}
+
+.jak_se_objednat {
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.jak_se_objednat .text {
+    line-height: 2;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.ordinacni_doba {
+    box-sizing: border-box; 
+    padding: 20px;
+    width: 350px;
+    min-width: 260px;
+}
+
+.span {
+    display: inline-block;
+} 
+
+.ordinacni_doba ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ordinacni_doba li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+@media (max-width:900px) {
     .container_kontakt .kontakty {
         flex-direction: column;
         align-items: center;
@@ -337,14 +407,53 @@ a:visited {
     .mapa {
         display: flex;
         align-items: center;
-        margin-left: 4%;
+        margin-left: 2%;
         margin-right: 4%;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .jak_se_objednat {
+        background-color: white;
+        width: 100%;
+    }
+
+    .ordinacni_doba {
+        width: 450px;
+    }
+
+    .objednani {
+        display: flex;
+        flex-direction: column;
     }
 }
 
+.cointainer_kontakt .kontakt {
+    padding: 20px;
+}
+
+.kontakt-info {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 18px;
+}
+
+.kontakt-info2 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 22px;
+}
+
 .mapa {
-    width: 50%;
+    width: 100%;
     height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 500px;
+    display: flex;
+    align-self: center;
 }
 
 .footer {
@@ -354,7 +463,6 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
     margin-bottom: 0px;
     color: white;
     font-size: 22px;
@@ -366,7 +474,7 @@ a:visited {
 }
 
 .footer img {
-    width: 35px;
+    width: 40px;
     height: 30px;
     background-color: #00578D;
     margin-left: 0px;
