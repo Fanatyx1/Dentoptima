@@ -438,18 +438,27 @@ a:visited {
     padding: 20px;
 }
 
-.kontakt-info {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    font-size: 18px;
-}
-
 .kontakt-info2 {
     display: flex;
     justify-content: center;
     align-self: center;
     font-size: 22px;
+}
+
+.kontakt img {
+    width: auto;
+    height: 80px;
+    display: flex;
+    align-self: center;
+    margin-top: 25px;
+}
+
+.kontakt .mail {
+    width: auto;
+    height: 70px;
+    display: flex;
+    align-self: center;
+    margin-top: 25px;
 }
 
 .mapa {
