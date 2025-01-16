@@ -332,7 +332,7 @@ a:visited {
     display: flex;
     justify-content: space-between;
     padding:  20px;
-    margin-bottom: 0px;
+    margin-bottom: 35px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -435,7 +435,7 @@ a:visited {
 }
 
 .cointainer_kontakt .kontakt {
-    padding: 20px;
+    padding: 10px;
 }
 
 .kontakt-info2 {
@@ -461,12 +461,17 @@ a:visited {
     margin-top: 25px;
 }
 
+.kontakt .IC {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
 .mapa {
     width: 100%;
     height: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    max-width: 500px;
+    max-width: 550px;
     display: flex;
     align-self: center;
 }
