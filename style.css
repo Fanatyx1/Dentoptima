@@ -21,7 +21,7 @@ body {
     min-width: 400px;
 }
 
-.container_cenik .cointainer_o_nas .container_hygiena .container_kontakt .container_ke_stazeni {
+.container_cenik .cointainer_o_nas .container_hygiena .container_kontakt .container_ke_stazeni .container_index {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -38,7 +38,7 @@ body {
     height: 120px;
 }
 
-.logo1 {
+.header .logo1 {
     font-size: 48px;
     font-weight: 900;
     margin-right: 0px;
@@ -46,9 +46,11 @@ body {
     display: flex;
     align-items: center;
     color: black;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.logo2{
+.header .logo2 {
     font-size: 48px;
     font-weight: 900;
     margin-left: 0px;
@@ -56,7 +58,10 @@ body {
     border-radius: 15%;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    text-decoration: none;
 }
+
 
 
 a:visited {
