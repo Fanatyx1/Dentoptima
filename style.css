@@ -21,7 +21,7 @@ body {
     min-width: 400px;
 }
 
-.container_cenik .cointainer_o_nas .container_hygiena .container_kontakt .container_ke_stazeni .container_index {
+.container_cenik .container_o_nas .container_hygiena .container_kontakt .container_ke_stazeni .container_index {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -285,7 +285,6 @@ a:visited {
     margin: 15px;
     width: 100%;
     height: auto;
-    
 }
 
 .container_o_nas .nadpis {
@@ -306,36 +305,52 @@ a:visited {
 }
 
 .container_o_nas .text1 {
-    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     line-height: 2;
     font-size: 18px;
     text-align: left;
+    margin-top: 10px;
 }
 
 @media (max-width:1100px) {
-    .container_o_nas .part1 {
+    .container_o_nas .part1, .container_o_nas .part2, .container_o_nas .part4, .container_o_nas .part5 {
         flex-direction: column;
-        align-items: left;
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-    .cointainer_o_nas .text1 {
-        text-align: left;
-        padding: 10px;
+        align-items: flex-start;
         margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    .container_o_nas .text1 {
+        text-align: left;
+        margin-left: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .container_o_nas .skupiny {
+        flex-direction: column;
+    }
+
+    .container_o_nas .part2, .container_o_nas .part4 img, .container_o_nas .part5 {
+        width: 100%;
+    }
+
+    .part4 img {
+        order: -1;
     }
 }
 
 .container_o_nas .part2, .part4, .part6 {
     background-color: #E5E7EB;
-    padding: 40px;
+    padding: 20px;
     line-height: 2;
     font-size: 18px;
 }
 
 .container_o_nas .part3, .part5 {
     background-color: white;
-    padding: 40px;
+    padding: 20px;
     line-height: 2;
     font-size: 18px;
 }
@@ -354,6 +369,80 @@ a:visited {
     margin-bottom: 15px;
     margin-left: 15%;
     margin-top: 15px;
+}
+
+.container_o_nas .podnadpis2 {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 30%;
+    margin-top: 15px;
+}
+
+.container_o_nas .part2 img {
+    max-height: 450px;
+    border-radius: 25px;
+    margin: 15px;
+    width: auto;
+    height: auto;
+}
+
+.container_o_nas .part2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_o_nas .skupiny {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skupina1, .skupina2 {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container_o_nas .podnadpis {
+    margin-top: 45px;
+}
+
+.container_o_nas .part4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_o_nas .part4text {
+    margin-top: 45px;
+}
+
+.container_o_nas .part4 img {
+    max-height: 450px;
+    border-radius: 25px;
+    margin: 15px;
+    width: auto;
+    height: auto;
+    align-self: center;
+}
+
+.container_o_nas .part5 img {
+    max-height: 450px;
+    border-radius: 25px;
+    margin: 15px;
+    width: auto;
+    height: auto;
+    align-self: center;
+}
+
+.container_o_nas .part5text {
+    margin-top: 45px;
+}
+
+.container_o_nas .part5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container_kontakt .nadpis {
@@ -448,7 +537,7 @@ a:visited {
         margin-left: 4%;
         margin-right: 4%;
     }
-    .cointainer_kontakt .kontakt {
+    .container_kontakt .kontakt {
         text-align: center;
         padding: 10px;
     }
@@ -476,7 +565,7 @@ a:visited {
     }
 }
 
-.cointainer_kontakt .kontakt {
+.container_kontakt .kontakt {
     padding: 10px;
 }
 
@@ -526,6 +615,7 @@ a:visited {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0px;
+    margin-top: auto;
     color: white;
     font-size: 22px;
 }
