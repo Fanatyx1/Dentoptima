@@ -21,7 +21,7 @@ body {
     min-width: 400px;
 }
 
-.container_cenik .container_o_nas .container_hygiena .container_kontakt .container_ke_stazeni .container_index {
+.container_cenik .container_o_nas .container_hygiena .container_kontakt .container_ke_stazeni .container_index .container_sluzby {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -443,6 +443,64 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.container_sluzby {
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.sluzby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.sluzby img {
+    height: 250px;
+    width: 250px;
+    border-radius: 30%;
+}
+
+.sluzby .nazev {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.sluzba {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    width: 100%;
+    align-self: flex-start;
+}
+
+.grafika {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.container_sluzby .text {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .sluzba {
+        flex-direction: column;
+    }
+
+    .grafika {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .container_kontakt .nadpis {
