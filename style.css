@@ -19,6 +19,8 @@ body {
     font-family: Paprika, sans-serif;
     height: 100vh; 
     min-width: 400px;
+    box-sizing: border-box;
+    max-width: 1400px;
 }
 
 .container_cenik .container_o_nas .container_hygiena .container_kontakt .container_ke_stazeni .container_index .container_sluzby {
@@ -213,7 +215,8 @@ body {
 
 .footerIndex {
     position: fixed;
-    bottom: 0;
+    margin-top: 50px;
+    max-width: 1400px;
 }
 
 @media (max-width: 800px) {
@@ -332,8 +335,75 @@ body {
     margin-top: 10px;
 }
 
+.container_o_nas .part2 img {
+    max-height: 140px;
+    max-width: 330px;
+    margin: 15px;
+    width: auto;
+    height: auto;
+    margin-right: 10%;
+}
+
+.container_o_nas .podnadpis {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.container_o_nas .part3 img {
+    max-height: 130px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-self: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5%;
+}
+
+.container_o_nas .part3 .podnadpis {
+    margin: 40px;
+}
+
+.kartacky {
+    border: black 1px solid;
+}
+
+.container_o_nas .part3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_o_nas .team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.osoba img {
+    height: 300px;
+    border-radius: 50%;
+    margin: 15px;
+    width: auto;
+    border:black 3px solid;
+}
+
+.osoba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.osoba .jmeno {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
 @media (max-width:1100px) {
-    .container_o_nas .part1, .container_o_nas .part2, .container_o_nas .part4, .container_o_nas .part5 {
+    .container_o_nas .part1, .container_o_nas .part2, .container_o_nas .part3, .container_o_nas .part4, .container_o_nas .part5 {
         flex-direction: column;
         align-items: flex-start;
         margin-left: 0px;
@@ -351,12 +421,35 @@ body {
         flex-direction: column;
     }
 
-    .container_o_nas .part2, .container_o_nas .part4 img, .container_o_nas .part5 {
+    .container_o_nas .part2, .container_o_nas .part2 img, .container_o_nas .part4 img, .container_o_nas .part5 {
         width: 100%;
     }
 
-    .part4 img {
+    .container_o_nas .part2 img {
+        margin-inline: auto;
+    }
+
+    .container_o_nas .part3 img {
+        display: flex;
+        align-self: center;
+        margin: 30px;  
+    }
+
+    .part4 img, .part2 img {
         order: -1;
+    }
+
+    .container_o_nas .part5, .part3 .podnadpis {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .container_o_nas .team {
+        flex-direction: column;
+    }
+
+    .container_o_nas .osoba {
+        margin: 20px;
     }
 }
 
@@ -365,6 +458,7 @@ body {
     padding: 20px;
     line-height: 2;
     font-size: 18px;
+    width: 100%;
 }
 
 .container_o_nas .part3, .part5 {
@@ -374,7 +468,7 @@ body {
     font-size: 18px;
 }
 
-.container_o_nas .text {
+.container_o_nas .text, .podnadpis {
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
@@ -382,48 +476,17 @@ body {
     margin-top: 40px;
 }
 
-.container_o_nas .podnadpis {
-    font-size: 24px;
-    text-align: left;
-    margin-bottom: 15px;
-    margin-left: 15%;
-    margin-top: 15px;
-}
-
 .container_o_nas .podnadpis2 {
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 15px;
-    margin-left: 30%;
     margin-top: 15px;
-}
-
-.container_o_nas .part2 img {
-    max-height: 450px;
-    border-radius: 25px;
-    margin: 15px;
-    width: auto;
-    height: auto;
 }
 
 .container_o_nas .part2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.container_o_nas .skupiny {
-    display: flex;
-    justify-content: space-around;
-}
-
-.skupina1, .skupina2 {
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.container_o_nas .podnadpis {
-    margin-top: 45px;
 }
 
 .container_o_nas .part4 {
@@ -437,7 +500,7 @@ body {
 }
 
 .container_o_nas .part4 img {
-    max-height: 450px;
+    max-height: 150px;
     border-radius: 25px;
     margin: 15px;
     width: auto;
@@ -446,9 +509,8 @@ body {
 }
 
 .container_o_nas .part5 img {
-    max-height: 450px;
-    border-radius: 25px;
-    margin: 15px;
+    max-height: 150px;
+    margin: 20px;
     width: auto;
     height: auto;
     align-self: center;
@@ -481,7 +543,7 @@ body {
 .sluzby img {
     height: 250px;
     width: 250px;
-    border-radius: 30%;
+    border-radius: 50%;
 }
 
 .sluzby .nazev {
@@ -509,6 +571,7 @@ body {
     text-align: left;
     display: flex;
     align-items: center;
+    line-height: 2;
 }
 
 @media (max-width: 900px) {
